@@ -2,18 +2,14 @@
 # Configure the Azure Provider
 provider "azurerm" { }
 
-# Create a resource group
-resource "azurerm_resource_group" "network" {
-  name     = "cg-lab"
-  location = "Australia Southeast"
-}
+
 
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "network" {
   name                = "lab-network"
   address_space       = ["10.200.0.0/16"]
   location            = "Australia Southeast"
-  resource_group_name = "ODL_checkpointtemplate-27038-05"
+  resource_group_name = "ODL_checkpointtemplate-xxxx-01"
 
   subnet {
     name           = "frontend"
