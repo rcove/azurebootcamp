@@ -2,7 +2,7 @@
 # Configure the Azure Provider
 provider "azurerm" { }
 
-
+# modify the resource group name to match a resource group in the lab 
 
 # Create a virtual network within the resource group
 resource "azurerm_virtual_network" "network" {
